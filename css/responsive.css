@@ -1,0 +1,196 @@
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  header nav {
+    flex-direction: column;
+    height: 10rem;
+    padding: 1rem 0;
+    gap: 1.5rem;
+  }
+  header nav .nav_right ul{
+    gap: 2rem;
+  }
+  .hero{
+    flex-direction: column-reverse;
+  }
+  .hero .heroText h1 {
+    width: 100%;
+    font-size: 5rem;
+  }
+  .hero .heroText p{
+    width: 100%;
+  }
+  /* Section : QuickList Start */
+
+  .QuickList {
+    flex-direction: column;
+  }
+  .QuickList_left {
+    width: 100%;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .QuickList_left img{
+    width: 100%;
+  }
+  .QuickList_right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .QuickList_right .btn {
+    align-self: center;
+  }
+
+  /* Section : QuickList end */
+
+  .features {
+    flex-direction: column;
+  }
+  .features .features_left {
+    width: 100%;
+  }
+  .features .features_right {
+    width: 100%;
+  }
+
+  .features .features_right .floatBox {
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .facts .facts_data {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4rem;
+  }
+  .companys {
+    gap: 2rem;
+  }
+
+  footer .container p{
+    line-height: 3rem;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+  header nav {
+    flex-direction: column;
+    height: 10rem;
+    padding: 1rem 0;
+    gap: 1.5rem;
+  }
+  .hero{
+    flex-direction: column-reverse;
+  }
+  .hero .heroText h1 {
+    width: 100%;
+  }
+  /* Section : QuickList Start */
+
+  .QuickList {
+    flex-direction: column;
+  }
+  .QuickList_left {
+    width: 100%;
+  }
+  .QuickList_right {
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .QuickList_right .btn {
+    align-self: center;
+  }
+
+  /* Section : QuickList end */
+
+  .features {
+    flex-direction: column;
+  }
+  .features .features_left {
+    width: 100%;
+  }
+  .features .features_right {
+    width: 100%;
+  }
+
+  .features .features_right .floatBox {
+    top: 0;
+    left: 0;
+    bottom: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .facts .facts_data {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+  }
+  .companys {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+  header nav {
+    flex-direction: column;
+    height: 10rem;
+    padding: 1rem 0;
+    gap: 1.5rem;
+  }
+
+  .hero{
+    flex-direction: column-reverse;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .features .features_left {
+    width: 100%;
+  }
+  .features .features_right {
+    width: 100%;
+  }
+  .features .features_right .floatBox {
+    top: 0;
+    left: 0;
+    bottom: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .facts .facts_data {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+  }
+  .companys {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+}

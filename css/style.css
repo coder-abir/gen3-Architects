@@ -1,0 +1,396 @@
+/* Google font - Work Sans  */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+
+/* Added reset.css for additional resets */
+/* Universal styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Colors  */
+
+:root {
+  font-size: 62.5%;
+  --color-main: #ff900e;
+  --color-secondary: #fff4e7;
+  --color-white: #ffffff;
+  --text-Primary: #131313;
+  --text-secondary: #727272;
+  --text-tertiary: #424242;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Work Sans", sans-serif;
+  padding-bottom: 21.6rem;
+}
+
+/* Container */
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+/* Explore Button */
+
+.btn {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 600;
+  color: var(--color-white);
+  background-color: var(--color-main);
+  border-radius: 0.8rem;
+  padding: 2rem 2.5rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-main);
+  color: var(--color-main);
+}
+
+/* Initial Styles End */
+
+/* Section : Header start */
+
+header {
+  background-color: var(--color-secondary);
+  padding-bottom: 4.5rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  height: 9rem;
+  align-items: center;
+}
+header nav .nav_left {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--text-Primary);
+  line-height: 5.3rem;
+  cursor: pointer;
+}
+header nav .nav_right ul {
+  display: flex;
+  gap: 5rem;
+}
+header nav .nav_right ul a {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  cursor: pointer;
+  position: relative;
+}
+header nav .nav_right ul a::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  position: absolute;
+  background-color: #ff900e;
+  bottom: 0;
+  left: 0;
+  transition: all 0.4s ease;
+}
+
+header nav .nav_right ul a:hover::before {
+  width: 100%;
+}
+.hero {
+  margin-top: 10rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.hero .heroText {
+  text-align: center;
+}
+.hero .heroText h1 {
+  font-size: 6.4rem;
+  line-height: 7.5rem;
+  font-weight: 700;
+  color: var(--text-Primary);
+  margin-bottom: 2.5rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero .heroText p {
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero img {
+  width: 100%;
+}
+/* Section : Header end */
+
+/* Section : QuickList Start */
+
+.QuickList {
+  margin-top: 8.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.QuickList_left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5rem;
+  width: 50%;
+}
+.QuickList_right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.QuickList_right h2 {
+  color: var(--text-secondary);
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 5.2rem;
+  margin-bottom: 3rem;
+}
+.QuickList_right .bold {
+  font-weight: 700;
+  color: var(--text-Primary);
+}
+.QuickList_right .maincolored {
+  font-weight: 700;
+  color: var(--color-main);
+}
+.QuickList_right p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--text-secondary);
+  margin-bottom: 3.2rem;
+}
+.QuickList_right .btn {
+  align-self: flex-start;
+}
+/* Section : QuickList end */
+
+/* Section : Features start */
+
+.features {
+  margin-top: 13rem;
+  display: flex;
+  gap: 14.5rem;
+  width: 100%;
+}
+
+.features .features_left {
+  width: 45%;
+}
+.features .features_left > h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 5rem;
+  color: var(--text-Primary);
+  position: relative;
+  margin-left: 2rem;
+}
+.features .features_left > h2::before {
+  content: "";
+  height: 100%;
+  width: 5px;
+  background-color: var(--color-main);
+  position: absolute;
+  left: -2rem;
+  top: 0;
+}
+
+.features .features_left > p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: var(--text-secondary);
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+.features .features_left .feature_items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.features .features_left .feature_items .item {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 3rem;
+}
+
+.features .features_left .feature_items .item h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  color: var(--text-Primary);
+  margin-bottom: 1rem;
+}
+.features .features_left .feature_items .item p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: var(--text-secondary);
+}
+.features .features_right {
+  width: 50%;
+  display: flex;
+}
+.features .features_right .img {
+  align-self: center;
+  position: relative;
+}
+.features .features_right img {
+  max-width: inherit;
+  width: 100%;
+  align-self: center;
+}
+
+.features .features_right .floatBox {
+  position: absolute;
+  bottom: -10%;
+  left: -18%;
+  background-color: var(--color-main);
+  padding: 4.5rem 4.2rem;
+  border-radius: 0.8rem;
+  color: var(--color-white);
+  text-align: center;
+}
+.features .features_right .floatBox h1 {
+  font-size: 6.5rem;
+  line-height: 7rem;
+  font-weight: 700;
+}
+.features .features_right .floatBox p {
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+/* Section : Features end */
+
+/* Facts Section Start */
+
+.facts {
+  margin-top: 13rem;
+}
+.facts > h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+  color: var(--text-Primary);
+  margin-bottom: 3.5rem;
+}
+.facts > p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: var(--text-secondary);
+}
+.facts .facts_data {
+  margin-top: 10rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8rem;
+}
+.facts .facts_data .item {
+  padding: 3.5rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-main);
+  transition: all 0.4s;
+}
+
+.facts .facts_data .item h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 5rem;
+  margin-bottom: 1.7rem;
+  margin-top: 1.7rem;
+}
+.facts .facts_data .item p {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.facts .facts_data .item:hover {
+  background-color: var(--color-main);
+  color: var(--color-white) !important;
+  transform: scale(1.1);
+}
+
+/* Facts Section End */
+
+/* Section : Sponsors Start */
+
+.sponsors {
+  margin-top: 13rem;
+}
+
+.sponsors h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 5rem;
+  color: var(--text-Primary);
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+.sponsors p {
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: var(--text-secondary);
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.companys {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  align-items: center;
+  gap: 5rem;
+}
+
+.companys img {
+  mix-blend-mode: luminosity;
+}
+/* Section : Sponsors end */
+
+/* Footer start */
+footer {
+  margin-top: 13rem;
+}
+
+footer .container {
+  background-color: var(--color-secondary);
+  border-radius: 0.8rem;
+  padding: 4rem 0;
+  text-align: center;
+}
+footer .container p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  color: var(--text-tertiary);
+}
+/* Footer end */
