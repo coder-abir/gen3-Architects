@@ -366,30 +366,45 @@ header nav .nav_right ul a:hover::before {
 
 .cta {
   width: 100%;
-  background-image: url("../images/ctaShape.svg");
+  background:url('../images/stacked-peaks-haikei.svg');
   position: relative;
   z-index: 20;
   margin-top: 13rem;
   padding: 16rem 0;
-  background-size: cover;
-  background-position: center;
+  background-size:cover;
+  background-position: top right;
   background-repeat: no-repeat;
 }
 .cta::before {
   content: "";
   height: 100%;
-  width: 100%;
+  width: 50%;
   position: absolute;
   top: 0;
   left: 0;
+  right:50%;
   background-color: #000;
-  opacity: 0.7;
+  /* opacity: 0.7; */
+  z-index: -1;
+  /* transform: skewX(-9deg);
+    transform-origin: top right; */
+}
+.cta::after{
+  content: '';
+  height: 100%;
+  width: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-main);
+  opacity: .2;
+  position: absolute;
   z-index: -1;
 }
 .cta_content {
   color: #fff;
   z-index: 999;
-  text-align: center;
+  /* text-align: center; */
   overflow: hidden;
   height: 100%;
   width: 100%;

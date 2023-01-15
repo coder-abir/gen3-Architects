@@ -94,7 +94,12 @@
   .cta {
     padding: 8rem 0;
   }
-
+  .cta::before{
+    width: 100%;
+  }
+  .cta_content{
+    text-align: center;
+  }
   .companys {
     gap: 2rem;
   }
@@ -166,9 +171,18 @@
     justify-content: center;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
-  }
+  } 
+
+  
 
   /* section features end */
+
+  .cta::before{
+    width: 100%;
+  }
+  .cta_content{
+    text-align: center;
+  }
 
   .facts .facts_data {
     grid-template-columns: repeat(2, 1fr);
@@ -226,6 +240,12 @@
   .facts .facts_data {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4rem;
+  }
+  .cta::before{
+    width: 100%;
+  }
+  .cta_content{
+    text-align: center;
   }
   .companys {
     gap: 2rem;
