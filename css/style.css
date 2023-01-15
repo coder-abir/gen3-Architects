@@ -302,6 +302,7 @@ header nav .nav_right ul a:hover::before {
   line-height: 5.2rem;
   color: var(--text-Primary);
   margin-bottom: 3.5rem;
+  margin-left: 2rem !important;
   position: relative;
 }
 
