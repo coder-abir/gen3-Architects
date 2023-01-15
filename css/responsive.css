@@ -8,6 +8,9 @@
     gap: 1rem;
     flex-direction: column;
   }
+  header nav h2{
+    color:var(--color-main);
+  }
   header nav .nav_right ul{
     gap: 2rem;
   }
