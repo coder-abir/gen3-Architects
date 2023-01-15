@@ -56,18 +56,21 @@
 
   .features .features_right .floatBox {
     left: 0;
-    bottom: 0;
+    bottom: -5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+    padding: 2rem;
   }
   .facts .facts_data {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 4rem;
   }
+
+  .cta{
+    padding: 8rem 0;
+  }
+
   .companys {
     gap: 2rem;
   }
@@ -124,15 +127,13 @@
   }
 
   .features .features_right .floatBox {
-    top: 0;
     left: 0;
-    bottom: inherit;
+    bottom: -5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
   }
   .facts .facts_data {
     grid-template-columns: repeat(2, 1fr);
@@ -167,9 +168,8 @@
     width: 100%;
   }
   .features .features_right .floatBox {
-    top: 0;
     left: 0;
-    bottom: inherit;
+    bottom: -5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
