@@ -88,7 +88,7 @@ header nav .nav_right ul a {
   position: relative;
 }
 
-header nav .bar{
+header nav .bar {
   display: none;
 }
 header nav .nav_right ul a::before {
@@ -306,7 +306,7 @@ header nav .nav_right ul a:hover::before {
   position: relative;
 }
 
-.facts  > h2::before{
+.facts > h2::before {
   content: "";
   height: 100%;
   width: 5px;
@@ -358,29 +358,29 @@ header nav .nav_right ul a:hover::before {
 
 /* Bonus Section : call to action start*/
 
-.cta{
+.cta {
   width: 100%;
-  background-image:url('../images/ctaShape.svg');
+  background-image: url("../images/ctaShape.svg");
   position: relative;
-  z-index: 20; 
+  z-index: 20;
   margin-top: 13rem;
   padding: 16rem 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.cta::before{
-  content:'';
+.cta::before {
+  content: "";
   height: 100%;
   width: 100%;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   background-color: #000;
-  opacity: .7;
+  opacity: 0.7;
   z-index: -1;
 }
-.cta_content{
+.cta_content {
   color: #fff;
   z-index: 999;
   text-align: center;
@@ -388,31 +388,31 @@ header nav .nav_right ul a:hover::before {
   height: 100%;
   width: 100%;
 }
-.cta_content h1{
+.cta_content h1 {
   font-size: 7rem;
   font-weight: 700;
   margin-bottom: 2rem;
 }
-.cta_content h1 span{
+.cta_content h1 span {
   color: var(--color-main);
 }
-.cta_content p{
+.cta_content p {
   line-height: 5rem;
   font-weight: 500;
   font-size: 2.5rem;
 }
-.cta_content button{
+.cta_content button {
   border: 3px solid var(--color-secondary);
   padding: 2rem 2.5rem;
   cursor: pointer;
   font-weight: 700;
   font-size: 2rem;
   margin-top: 3rem;
-  transition: all .4s;
+  transition: all 0.4s;
 }
-.cta_content button:hover{
+.cta_content button:hover {
   background-color: var(--color-secondary);
-  color:var(--text-Primary);
+  color: var(--text-Primary);
 }
 /* Bonus Section : call to action end*/
 
