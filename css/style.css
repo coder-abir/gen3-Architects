@@ -366,7 +366,7 @@ header nav .nav_right ul a:hover::before {
 
 .cta {
   width: 100%;
-  background:url('../images/stacked-peaks-haikei.svg');
+  background:url('../images/ctabg.svg');
   position: relative;
   z-index: 20;
   margin-top: 13rem;
