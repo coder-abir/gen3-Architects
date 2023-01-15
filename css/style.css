@@ -87,6 +87,10 @@ header nav .nav_right ul a {
   cursor: pointer;
   position: relative;
 }
+
+header nav .bar{
+  display: none;
+}
 header nav .nav_right ul a::before {
   content: "";
   height: 2px;
@@ -298,6 +302,17 @@ header nav .nav_right ul a:hover::before {
   line-height: 5.2rem;
   color: var(--text-Primary);
   margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.facts  > h2::before{
+  content: "";
+  height: 100%;
+  width: 5px;
+  background-color: var(--color-main);
+  position: absolute;
+  left: -2rem;
+  top: 0;
 }
 .facts > p {
   font-size: 1.6rem;
@@ -373,7 +388,7 @@ header nav .nav_right ul a:hover::before {
   width: 100%;
 }
 .cta_content h1{
-  font-size: 10vw;
+  font-size: 7rem;
   font-weight: 700;
   margin-bottom: 2rem;
 }

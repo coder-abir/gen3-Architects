@@ -3,16 +3,18 @@
     width: 90%;
   }
   header nav {
-    flex-direction: column;
-    height: 10rem;
+    height: auto;
     padding: 1rem 0;
-    gap: 1.5rem;
+    gap: 1rem;
+    flex-direction: column;
   }
   header nav .nav_right ul{
     gap: 2rem;
   }
+
   .hero{
     flex-direction: column-reverse;
+    margin-top: 5rem;
   }
   .hero .heroText h1 {
     width: 100%;

@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <!-- Reset.css works as pre reseted css -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -19,12 +21,16 @@
             <h2>G3 Architects</h2>
           </div>
           <div class="nav_right">
-            <ul>
+            <div class="mobile_nav">
+              <a href="#" class="bar""><i id="bar" class="fa-solid fa-bars"></i></a>
+            </div>
+            <ul id="nav" class="navshow">
               <a href="#">Home</a>
               <a href="#">About</a>
               <a href="#">Contact Us</a>
               <a href="#">Login</a>
             </ul>
+            
           </div>
         </nav>
         <!-- Nav end -->
@@ -195,5 +201,7 @@
       </div>
     </footer>
     <!-- Footer End -->
+
+    <script src="script.js"></script>
   </body>
 </html>
